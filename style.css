@@ -4,5 +4,10 @@
 }
 
 .mainbg {
-    background: #f5f5f5 url("assets/bg1.png") no-repeat top center;;
+    background: #f5f5f5 url("assets/bg1.png") no-repeat top center;
+}
+
+.time {
+    padding-left: 410px;
+    padding-top: 26px;
 }
