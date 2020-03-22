@@ -67,7 +67,7 @@ body, html {
     margin-inline-start: 10px;
 }
 
-.appointment-button {
+.appointment-button-style {
     color: #ffffff;
     background: #F2726F;
     font-family: 'Roboto', sans-serif;
@@ -85,20 +85,22 @@ body, html {
     text-transform: uppercase;
 }
 
-.button {
+.appointment-button-1 {
     vertical-align: top; 
     float: right;
     margin-left: 32px;
 }
 
+.button2 {
+margin-top: 48px;
+}
 
 .menu-container {
-background-color: #ffffff;
-width: 1020px;
-height: 60px;
-border-radius: 10px;
-margin-top: 28px;
-clear: both;
+    background-color: #ffffff;
+    width: 1020px;
+    height: 60px;
+    border-radius: 10px;
+    clear: both;
 }
 
 .services, 
@@ -107,45 +109,74 @@ clear: both;
 .reviews,
 .shop,
 .about {
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 157%;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.15px;
-color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 157%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #000000;
 }
 
 .services-box {
-width: 60px;
-height: 30px;
-display: inline-block;
-margin-top: 5px;
-margin-left: 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 40px;
 }
 
 .specials-box {
-box-sizing: border-box;
-display: inline-block;
-margin-top: 5px;
-margin-left: 54px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 37px;
 }
 
 .facilities-box, 
 .reviews-box,
 .shop-box {
-box-sizing: border-box;
-display: inline-block;
-margin-top: 5px;
-margin-left: 37px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 37px;
 }
 
 .about-box {
-box-sizing: border-box;
-display: inline-block;
-margin-top: 5px;
-margin-left: 55px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 55px;
+}
+
+.show-more-1,
+.show-more-2 {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 5px;    
+}
+
+.search-box {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 18px;
+    margin-left: 306px; 
+}
+
+.shopping-cart-box {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 18px;
+    margin-left: 22px; 
+}
+
+.services-provided-box {
+    margin-top: 126px;
+}
+
+.services-provided {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 56px;
+    color: #FFFFFF;
 }
