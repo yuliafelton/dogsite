@@ -101,6 +101,7 @@ margin-top: 48px;
     height: 60px;
     border-radius: 10px;
     clear: both;
+    margin-top: 25px;
 }
 
 .services, 
@@ -179,4 +180,161 @@ margin-top: 48px;
     font-size: 56px;
     line-height: 56px;
     color: #FFFFFF;
+}
+
+.who-we-are-container {
+    width: 1020px;
+    height: 700px;
+    margin-top: 232px;
+    background: #5D62B5;
+    border-radius: 40px;
+    padding-top: 100px;
+}
+.who-we-are-default {
+    margin-left: 87px;
+}
+
+.overline-mark-white {
+    float: left;
+}
+
+.who-we-are {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #F5F5F5;
+}
+
+.who-we-are-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.who-we-are-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #F5F5F5;
+}
+
+.who-we-are-dog {
+    margin-top: 110px;
+    margin-left: 63px;
+}
+
+.svg {
+    position: absolute;
+    left: 140px;
+    top: 1020px;
+    z-index: 3;
+}
+
+.our-promise-default {
+    margin-left: 87px; 
+    margin-top: 230px;  
+}
+
+
+
+.overline-mark-blue {
+    float: left;
+}
+
+.our-promise {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #5D62B5;
+}
+
+.our-promise-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.love-care {
+    margin-top: 68px;
+    display: inline-block;
+}
+.love-care-heart {
+    float: left;
+}
+
+.love-care-text {
+    margin-left: 86px;
+}
+
+.love-care-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    color: #F2726F;
+    margin-top: 0;
+}
+
+.love-care-p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B4B4B;
+}
+
+.dog-wet {
+    display: inline-block;
+    margin-left: 24px;
+    box-sizing: content-box;
+}
+
+.dog-wet-heart {
+    float: left;
+}
+
+.dog-wet-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    color: #F2726F;
+    margin-top: 0;
+}
+
+.dog-wet-p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B4B4B;
+}
+
+.dog-wet-text {
+    margin-left: 86px;
 }
