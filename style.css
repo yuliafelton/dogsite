@@ -3,15 +3,27 @@ body, html {
     margin: 0;
 }
 
-.mainbg {
-    background: #f5f5f5;
+body {
+    background-color: #f5f5f5;
+    min-width: 1250px;
+    position: relative;
 }
 
-.top-bg-image {
+header {
+    position: relative;
+}
+
+main {
+    position: relative;
+}
+
+.bg-picture {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     background: url("assets/bg1.png") no-repeat top center;
-    background-size: 1440px 800px;
+    background-size: contain;
 }
-
 .time-icon {
    margin-top: 5px;
 }
@@ -22,14 +34,11 @@ body, html {
 
 .hours {
     vertical-align: top;
-    float: right;
 }
 
-.boarding-hours {
-    float: right;
-}
 
-.boarding-time {
+.boarding-time,
+.call-us-text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -51,23 +60,22 @@ body, html {
     margin-top: 5px;
 }
 
-.call-us {
+.call-us,
+.boarding-hours,
+.email,
+.select-service,
+.customers-served-box,
+.hours,
+.yard-3,
+.yard-2,
+.yard-1,
+.gallery,
+input[type=submit] {
     float: right; 
 }
 
-.call-us-text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 22px; 
-    color: #ffffff; 
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 10px;
-}
-
-.appointment-button-style {
+.appointment-button-style,
+input[type=submit] {
     color: #ffffff;
     background: #F2726F;
     font-family: 'Roboto', sans-serif;
@@ -78,7 +86,6 @@ body, html {
     border-radius: 4px;
     border: 0px;
     padding: 9px 20px 9px 20px;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.15px;
@@ -92,12 +99,11 @@ body, html {
 }
 
 .button2 {
-margin-top: 48px;
+    margin-top: 48px;
 }
 
 .menu-container {
     background-color: #ffffff;
-    width: 1020px;
     height: 60px;
     border-radius: 10px;
     clear: both;
@@ -114,10 +120,6 @@ margin-top: 48px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 157%;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.15px;
     color: #000000;
 }
@@ -126,12 +128,20 @@ margin-top: 48px;
     box-sizing: border-box;
     display: inline-block;
     margin-left: 40px;
+    margin-top: 23px;
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: top;
 }
 
 .specials-box {
     box-sizing: border-box;
     display: inline-block;
-    margin-left: 37px;
+    margin-left: 40px;
+    margin-top: 23px;
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: top;
 }
 
 .facilities-box, 
@@ -139,34 +149,42 @@ margin-top: 48px;
 .shop-box {
     box-sizing: border-box;
     display: inline-block;
-    margin-left: 37px;
+    margin-left: 40px;
+    margin-top: 23px;
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: top;
 }
 
 .about-box {
     box-sizing: border-box;
     display: inline-block;
-    margin-left: 55px;
+    margin-left: 40px;
+    margin-top: 23px;
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: top;
 }
 
 .show-more-1,
 .show-more-2 {
+    margin-left: 5px;
     box-sizing: border-box;
+    margin-top: 20px;
     display: inline-block;
-    margin-left: 5px;    
+    vertical-align: top;  
 }
 
 .search-box {
-    box-sizing: border-box;
-    display: inline-block;
-    margin-top: 18px;
-    margin-left: 306px; 
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
 }
 
 .shopping-cart-box {
-    box-sizing: border-box;
-    display: inline-block;
-    margin-top: 18px;
-    margin-left: 22px; 
+    float: right;
+    margin-right: 40px; 
+    margin-top: 20px;
 }
 
 .services-provided-box {
@@ -182,14 +200,20 @@ margin-top: 48px;
     color: #FFFFFF;
 }
 
-.who-we-are-container {
+.who-we-are-container,
+.gallery-and-live-container {
     width: 1020px;
     height: 700px;
-    margin-top: 232px;
+    margin: auto;
     background: #5D62B5;
     border-radius: 40px;
     padding-top: 100px;
 }
+
+.who-we-are-container {
+    margin-top: 16%;
+}
+
 .who-we-are-default {
     margin-left: 87px;
 }
@@ -198,20 +222,21 @@ margin-top: 48px;
     float: left;
 }
 
-.who-we-are {
+.who-we-are,
+.gallery-and-live {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 24px;
-    display: flex;
     align-items: center;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: #F5F5F5;
 }
 
-.who-we-are-heading {
+.who-we-are-heading,
+.gallery-and-live-heading {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -243,30 +268,37 @@ margin-top: 48px;
 }
 
 .our-promise-default {
-    margin-left: 87px; 
+    margin: auto; 
     margin-top: 230px;  
+    width: 1020px;
 }
 
-
+.our-services-default {
+    margin: auto;
+    margin-top: 110px;
+    width: 1020px;
+}
 
 .overline-mark-blue {
     float: left;
 }
 
-.our-promise {
+.our-promise,
+.our-services {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 24px;
-    display: flex;
     align-items: center;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: #5D62B5;
 }
 
-.our-promise-heading {
+.our-promise-heading,
+.our-services-heading,
+.our-customers-heading {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -275,19 +307,29 @@ margin-top: 48px;
     color: #000000;
 }
 
+.our-customers-heading {
+    float:left;
+}
+
 .love-care {
     margin-top: 68px;
     display: inline-block;
 }
-.love-care-heart {
+.love-care-heart,
+.dog-wet-heart,
+.live-stream-img {
     float: left;
 }
 
-.love-care-text {
+.love-care-text,
+.dog-wet-text,
+.live-stream-text {
     margin-left: 86px;
 }
 
-.love-care-heading {
+.love-care-heading,
+.dog-wet-heading,
+.live-stream-heading {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -297,7 +339,9 @@ margin-top: 48px;
     margin-top: 0;
 }
 
-.love-care-p {
+.love-care-p,
+.dog-wet-p,
+.live-stream-p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -306,35 +350,274 @@ margin-top: 48px;
     color: #4B4B4B;
 }
 
-.dog-wet {
+.dog-wet,
+.live-stream {
     display: inline-block;
     margin-left: 24px;
     box-sizing: content-box;
 }
 
-.dog-wet-heart {
+.dog-play {
+    margin-top: 122px;
+    height: 500px;
+    background-color: #29C3BE;
+}
+
+.puppy-run {
+    margin-top: 50px;
+    height: 450px;
     float: left;
 }
 
-.dog-wet-heading {
+.tennis-ball {
+    margin-top: 113.85px;
+    margin-right: 43.63px;
+    float: right;
+}
+
+.dog-play-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    padding-top: 112px;
+}
+
+.appointment-button-3 {
+    margin-top: 42px;
+}
+
+.dog-play-appointment {
+    margin-left: 55%;
+}
+
+.service-box {
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 324px;
+    height: 340px;
+    float: left;
+}
+
+.service-boxes-default {
+    margin-top: 78px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pet-boarding,
+.custom-meal,
+.pet-daycare,
+.pet-training,
+.review1,
+.review2 {
+    margin-right: 24px;
+}
+
+.review2,
+.review1 {
+    float: right;
+}
+
+.pet-boarding,
+.pet-daycare,
+.pet-day-spa {
+    margin-bottom: 24px;;
+}
+
+.services-img {
+    margin: 50px 130px 0px 130px;
+}
+
+.services-box-heading {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 19px;
     line-height: 26px;
+    text-align: center;
     color: #F2726F;
-    margin-top: 0;
+    margin-top: 33px;
 }
 
-.dog-wet-p {
+.services-box-text,
+.review-box-text {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px;
     color: #4B4B4B;
+    width: 235px;
+    margin: auto;
+    margin-top: 20px;
 }
 
-.dog-wet-text {
-    margin-left: 86px;
+.review-box-text {
+    width: 237px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.learn-more-button-style {
+    color: #ffffff;
+    background: #F2726F;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px; 
+    border-radius: 4px;
+    border: 0px;
+    padding: 9px 20px 9px 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    margin: 66px auto 0 auto;
+    margin-left: 45%;
+}
+
+.appointment-bg {
+    margin-top: 113px;
+    padding-top: 130px;
+    background: url("assets/BG\ Image.png") center no-repeat;
+    background-size: cover;
+}
+
+.appointment-input-box {
+    width: 585px;
+    height: 640px;
+    background-color: #5D62B5;
+    margin: auto auto 210px 210px;
+    border-radius: 40px;
+    padding-top: 76px;
+}
+
+.appointment-box-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.appointment-form {
+    padding-left: 57px;
+    padding-right: 57px;
+    margin-top: 43px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #5D62B5;
+    color: white;
+    opacity: 0.8;
+    padding: 17px 23.58px 15px 23.58px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.15px;
+    width: 176px;
+    height: 16px;
+    margin-bottom: 22px;
+}
+
+textarea {
+    width: 421px;
+    height: 180px;
+    resize: none;
+}
+
+.customers-served-box {
+    width: 324px;
+    height: 280px;
+    margin-top: 171px;
+    margin-right: 10%;
+}
+
+.customers-served-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.customers-served-number {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.customers-served {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.yard-3,
+.yard-2,
+.yard-1,
+.gallery {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+}
+
+.yard-2,
+.yard-1,
+.gallery {
+    margin-right: 98px;
+}
+
+.yard-3 {
+    margin-right: 125px;
+}
+
+.review-photo {
+    margin-left: 43px;
+    margin-top: 30px;
+}
+
+.review-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #F2726F;
+    float: right;
+    margin-top: 48px;
+    margin-right: 84px;
 }
